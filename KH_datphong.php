@@ -127,4 +127,4 @@ if (isset($_SESSION['id']) && isset($_SESSION['hovaten'])) {
 }
  ?>
 
- <!-- quang ngu nhe anh em -->
+ <!-- quang ngu va ngu -->
