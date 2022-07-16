@@ -41,7 +41,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['hovaten'])) {
      <?php
         $result=pg_query($conn,"SELECT * FROM taikhoan WHERE id='$id'");
         $row=pg_fetch_assoc($result);
-          if($row['chucvu']=='KHách hàng'){?>
+          if($row['chucvu']=='Khách hàng'){?>
                <a href="./KH_trangchu.php">Trở lại</a>
           <?php
           }else{?>
@@ -66,7 +66,7 @@ if (isset($_POST['update'])){
         exit();
     }
 
-    $sql="UPDATE takhoan SET pass='$new_pass' WHERE id='$id'";
+    $sql="UPDATE taikhoan SET pass='$new_pass' WHERE id='$id'";
     pg_query($conn,$sql);
     header("Location: TK_doimatkhau.php?success=Đổi mật khẩu thành công ");
     $conn=NULL;

@@ -27,7 +27,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['hovaten'])) {
      $row=pg_fetch_assoc($result);
 ?>
 <form class="form">
-
 <label> Mã hóa đơn : <?php echo $row['mahoadon']; ?></label><br>
         <label> Mã khách hàng : <?php echo $row['kh_id']; ?></label><br>
         <label> Họ và tên : <?php echo $row['hovaten']; ?></label><br>
