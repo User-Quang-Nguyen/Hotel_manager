@@ -62,7 +62,7 @@ if (isset($_POST['update'])){
         exit();
     }
     if($re_pass!=$new_pass) {
-        header("Location: TK_doimatkhau.php?error=NHập lại mật khẩu mới không chính xác");
+        header("Location: TK_doimatkhau.php?error=Nhập lại mật khẩu mới không chính xác");
         exit();
     }
 
