@@ -126,3 +126,5 @@ if (isset($_SESSION['id']) && isset($_SESSION['hovaten'])) {
      exit();
 }
  ?>
+
+ <!-- quang ngu nhe anh em -->
